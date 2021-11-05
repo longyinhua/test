@@ -28,6 +28,8 @@ public class B  extends A{
 //    @SuppressWarnings("rawtypes")
     public List processList(){
         List list = new ArrayList();
+
+
         return list;
     }
 
