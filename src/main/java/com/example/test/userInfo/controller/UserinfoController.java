@@ -1,9 +1,11 @@
 package com.example.test.userInfo.controller;
 
 
+import com.example.test.TestApplication;
 import com.example.test.userInfo.model.Userinfo;
 import com.example.test.userInfo.service.UserinfoService;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.boot.SpringApplication;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -27,6 +29,10 @@ import java.util.List;
 @Controller
 public class UserinfoController {
 
+    public static void main(String[] args) {
+        int a=4+'4';
+        System.out.println(a);
+    }
 
     @Autowired
     private UserinfoService userinfoService;
