@@ -18,6 +18,8 @@ import java.util.List;
  */
 public interface UserinfoMapper extends BaseMapper<Userinfo> {
 
+
+
      @Select("select * from userinfo")
      @Results(id="studentMap",value = {
              @Result(id = true, column = "id", property = "id"),
