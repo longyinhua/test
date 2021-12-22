@@ -8,6 +8,13 @@ class TestApplicationTests {
 
     @Test
     void contextLoads() {
+        System.out.println("11");
     }
+
+    public static void main(String[] args) {
+
+
+    }
+
 
 }
