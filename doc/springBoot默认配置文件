@@ -1,0 +1,12 @@
+Spring Boot 启动时会扫描以下五个位置的 application.properties或者aplication.yml文件，并将他们作为Spring Boot的默认配置文件。
+1、file:./config/
+2、file:./config/*/
+3、file:./
+4、classpath:/config/
+5、classpath:/
+注: file 指当前项目根目录;classpath:指当前项目的类路径，即resources目录。
+以上所有位置的配置文件都会被加载，且它们优先级依次降低，序号越小优先级越高，其次，位于相同位置的application.properties的优先级高于application.yml.
+
+所有位置的文件都会被加载，高优先级配置会覆盖低优先级配置，形成互补配置，即：
+1、存在相同的配置内容时，高优先级的内容会覆盖低优先级的内容。
+2、存在不同的配置内容时，高优先级和地有限的配置内容取并集。
