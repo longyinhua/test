@@ -1,8 +1,8 @@
 # 默认配置
 server:
   port: 8080
-#  servlet:
-#    context-path: /
+  servlet:
+    context-path: /mybootdemo # 上下文项目访问路径
 
 
 
@@ -13,8 +13,8 @@ spring:
     username: root  #用户名
     password:      #密码
     driver-class-name: com.mysql.cj.jdbc.Driver #数据库链接驱动
-#  profiles:
-#    active: test
+  profiles:
+    active: dev # 激活开发环境配置
 
 mybatis:
     mapper-locations: classpath:mapper/*.xml #配置映射文件

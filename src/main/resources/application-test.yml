@@ -1,3 +1,10 @@
 # 测试环境
 server:
   port: 8082
+  servlet:
+    context-path: /in-test # 测试环境上下文路径 /in-test
+
+spring:
+  config:
+    activate:
+      on-profile: test
