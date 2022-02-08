@@ -2,9 +2,11 @@ package com.example.test.userInfo.mapper;
 
 import com.example.test.userInfo.model.Userinfo;
 import com.baomidou.mybatisplus.core.mapper.BaseMapper;
+import org.apache.ibatis.annotations.Mapper;
 import org.apache.ibatis.annotations.Result;
 import org.apache.ibatis.annotations.Results;
 import org.apache.ibatis.annotations.Select;
+import org.springframework.stereotype.Repository;
 
 import java.util.List;
 
@@ -16,6 +18,9 @@ import java.util.List;
  * @author lyh
  * @since 2021-11-01
  */
+
+@Repository
+@Mapper
 public interface UserinfoMapper extends BaseMapper<Userinfo> {
 
 

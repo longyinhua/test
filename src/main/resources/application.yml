@@ -34,18 +34,5 @@ mybatis-puls:
        # 删除后
         logic-delete-value: 1
 
-# 日志级别
-logging:
-  level:
-#    root: info
-     com:
-       example: trace  # 不同目录下的日志可配置不同级别
-# 使用相对路径的方式设置日志输出的位置(项目根目录\my-log\mylog\spring.log)
-  file:
-    path: /spring-boot/logging
-  pattern:
-    console: '%d{yyyy-MM-dd hh:mm:ss} [%thread] %-5level %logger{50} - %msg%n'
-    file: '$d{yyyy-MM-dd}===[%thread]===%-5level===%logger{50}===- %msg%n'
-
 
 

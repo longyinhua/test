@@ -30,4 +30,6 @@ public interface UserinfoService extends IService<Userinfo> {
      */
     Userinfo getUser(String userName , String password);
 
+    int insertUser(Userinfo userinfo);
+
 }

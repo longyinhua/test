@@ -1,5 +1,5 @@
 # 项目根目录下
 # 上下文路径为/abc
-server:
-  servlet:
-    context-path: /abc
+#server:
+#  servlet:
+#    context-path: /abc

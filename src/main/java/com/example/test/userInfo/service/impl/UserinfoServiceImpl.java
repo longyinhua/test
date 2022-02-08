@@ -33,4 +33,9 @@ public class UserinfoServiceImpl extends ServiceImpl<UserinfoMapper, Userinfo> i
     public Userinfo getUser(String userName, String password) {
         return userinfoMapper.getUser(userName,password);
     }
+
+    @Override
+    public int insertUser(Userinfo userinfo) {
+        return userinfoMapper.insert(userinfo);
+    }
 }
